@@ -4,6 +4,8 @@
 	<title>Me</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
 
+<script src="https://use.fontawesome.com/ff6a79d69f.js"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,7 +13,7 @@
 <body>
 
 <header id="main_navigation" class="clearfix">
-		<a href="#" class="name">red cube</a>
+		<%= link_to "Red cube", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Posts", posts_path %>
 			<a href="">Projects</a>
@@ -21,5 +23,13 @@
 
 <%= yield %>
 
+<footer id="main_footer">
+		<p class="copytight">&copy; 2016 - Felipe Mariano</p>
+		<nav>
+			<a href="http://facebook.com/felipe.mariano.750" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="http://github.com/FelipeMariano" target="_blank"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
 </body>
 </html>
