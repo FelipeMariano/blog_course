@@ -7,12 +7,12 @@
 	
 
 		<div id="content">
-			<%= @post.content %>
+			<%= markdown @post.content %>
 		</div>
 		
 		<hr>
 		
-		<div id 	="share_box">
+		<div id="share_box">
 			<p>Share <%= @post.title %></p>
 			<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title%> by @JustFeh - &amp;url=<%=url_for([@post, {only_path: false}])%>', '_blank', 'width=800, height=500,top=200,left=300');void(0);">
 			<i class="fa fa-twitter"></i></a>
@@ -29,3 +29,5 @@
 		<hr>
 	
 	</div>
+
+<%= link_to "Edit", edit_post_path(@post) %>
