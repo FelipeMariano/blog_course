@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'friendly_id', '~> 5.1.0'
+
 
 ####### for code highlighting
 gem 'pygments.rb', '~> 0.6.0'
