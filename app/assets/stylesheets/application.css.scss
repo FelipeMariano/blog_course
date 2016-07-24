@@ -183,6 +183,10 @@ input[type="submit"]{
 	text-align: center;
 }
 
+.hidden{
+	display: none;
+}
+
 @import 'welcome';
 @import 'post_project';
 @import 'pygments';
