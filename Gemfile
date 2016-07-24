@@ -28,6 +28,8 @@ gem 'will_paginate', '~> 3.1'
 
 gem 'mail_form', '~> 1.5.1'
 
+gem 'devise', '~> 3.4.1'
+
 ####### for code highlighting
 gem 'pygments.rb', '~> 0.6.0'
 ####### for markdown 
