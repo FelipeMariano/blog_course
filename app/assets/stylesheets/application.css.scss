@@ -187,6 +187,12 @@ input[type="submit"]{
 	display: none;
 }
 
+.notice, .alert{
+	text-align: center;
+	padding: 1em 0;
+	border-bottom: 1px solid $border;
+}
+
 @import 'welcome';
 @import 'post_project';
 @import 'pygments';
