@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :projects
   resources :contacts, only: [:new, :create]
 
+  #redirect on routing error
+  get '*path' => redirect('/')
+
   get 'welcome/index'
 
   root 'welcome#index'
